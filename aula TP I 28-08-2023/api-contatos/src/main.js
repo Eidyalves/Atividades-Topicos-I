@@ -8,6 +8,10 @@ app.get('/', function(request, response){
     response.send('API Funcionando!!!');
 });
 
+app.get('/autora', function(request, response){
+    return response.send('Autora: Eidy');
+});
+
 //Iniciando a aplicação na porta 3000
 app.listen (3000, function() {
     console.log('API iniciada na porta: 3000');
