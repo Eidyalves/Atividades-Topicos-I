@@ -1,0 +1,13 @@
+//Arquivo contato.controller.js
+
+// Dados da lista de contatos
+const listaContatos = ['...'];
+
+//função list
+function list(request, response) {
+  return response.json({ dados: listaContatos });
+}
+
+
+// Module exports sempre no final do arquivo
+module.exports = { list };
